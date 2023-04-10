@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../skydash-free-bootstrap-admin-template-main/skydash-free-bootstrap-admin-template-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WEB ADMIN SIMAS (1)"
+	}
+}
