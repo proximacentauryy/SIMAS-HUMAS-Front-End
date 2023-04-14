@@ -15,4 +15,4 @@
   if ($("#video-gallery").length) {
     $("#video-gallery").lightGallery();
   }
-})(jQuery);
+})(jQuery); 
