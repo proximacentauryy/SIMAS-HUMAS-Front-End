@@ -25243,7 +25243,7 @@ dl li {
 }
 
 .tooltip {
-  font-size: 0.75rem;
+  font-size: 0.75rem; 
   min-width: 5.625rem;
   z-index: 1029;
 }
@@ -30688,6 +30688,8 @@ div.tagsinput span.tag a {
 .images-modul{
   margin: 10px;
 }
+
+
 
 
 
