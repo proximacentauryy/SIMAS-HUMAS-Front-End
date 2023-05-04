@@ -15,9 +15,6 @@
   <link rel="stylesheet" href="../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
   <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css">
   <link rel="stylesheet" type="text/css" href="../js/select.dataTables.min.css">
-
-  <link rel="stylesheet" href="../vendors/mdi/css/materialdesignicons.min.css">
-
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="../css/vertical-layout-light/style.css">
@@ -199,7 +196,7 @@
                   <div class="navsubitem">
                     <a class="nav-link" href="../2_BKK/bkkalumnisukses.html">Alumni Sukses</a>
                     <a class="nav-link" href="../2_BKK/bkkmou.html">MoU</a>
-                    <a class="nav-link" href="../2_BKK/bkkpeminatan.html">Peminatan</a>
+                    <a class="nav-link" href="#">Peminatan</a>
                     <a class="nav-link" href="../2_BKK/bkkworkshop.html">Workshop</a>
                     <a class="nav-link" href="../2_BKK/bkkkebekerjaan.html">Kebekerjaan</a>
                     <a class="nav-link" href="../2_BKK/bkkspw.html">SPW</a>
@@ -216,122 +213,60 @@
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
-          <div class="row">
+            <div class="row">
             <div class="col-md-12 grid-margin">
-              <div class="row">
-                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                  <h3 class="font-weight-bold">Peminatan</h3>
-                  <h6 class="font-weight-normal mb-0">Laman Data Laporan Peminatan | <span class="text-primary">SIMAS</span></h6>
+                <div class="row"> 
+                  <div class="col-12 grid-margin">
+                    <h3 class="font-weight-bold">PEMINATAN</h3>
+                    <h6 class="font-weight-normal mb-0">Laman Peminatan | <span class="text-primary">SIMAS</span></h6>
+                  </div> 
                 </div>
-              </div>
-            </div>
-          </div>
+              
 
-          <div class="row">
-            <div class="col-md-12 grid-margin">
-            <div class="template-demo">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Tambah Data</button>
-            </div>
-            </div>
-
-            
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Tambah Data</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+                <div class="row">
+                  <div class="col-md-4 stretch-card grid-margin">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card data-icon-card-primary">
+                          <div class="card-body">                      
+                            <div class="row">
+                              <div class="col-12 text-white">
+                                <h3>Form Peminatan</h3> 
+                              </div> 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="row">
+                            <a href="bkkpeminatanform.html"><button type="button" class="btn btn-inverse-primary btn-fw btn-block">Isi Form ini</button></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="modal-body">
-                    <form class="forms-sample">
-                      <div class="form-group">
-                        <label for="nama">Nama Lengkap</label>
-                        <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap">
+                  <div class="col-md-4 stretch-card grid-margin">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card data-icon-card-primary">
+                          <div class="card-body">                      
+                            <div class="row">
+                              <div class="col-12 text-white">
+                                <h3>Laporan Peminatan</h3> 
+                              </div> 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="row">
+                            <a href="bkkpeminatanlaporan.html"><button type="button" class="btn btn-inverse-primary btn-fw btn-block">Masuk ke laman ini</button>
+                          </div>
+                        </div>
                       </div>
-                      <div class="form-group">
-                        <label for="jeniskelamin">Jenis Kelamin</label>
-                          <select class="form-control" id="jeniskelamin">
-                            <option>Laki - Laki</option>
-                            <option>Perempuan</option>
-                          </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="kelas">Kelas</label>
-                        <input type="text" class="form-control" id="kelas" placeholder="Kelas">
-                      </div>
-                      <div class="form-group">
-                        <label for="domisili">Domisili</label>
-                        <input type="text" class="form-control" id="domisili" placeholder="Domisili">
-                      </div>
-                      <div class="form-group">
-                        <label for="alamat">Alamat</label>
-                        <input type="text" class="form-control" id="alamat" placeholder="Alamat">
-                      </div>
-                      <div class="form-group">
-                        <label for="notelp">No. Telp</label>
-                        <input type="number" class="form-control" id="notelp" placeholder="No. Telp">
-                      </div>
-                      <div class="form-group">
-                        <label for="rencana">Rencana setelah lulus</label>
-                          <select class="form-control" id="rencana">
-                            <option>Bekerja</option>
-                            <option>Kuliah</option>
-                            <option>Berwirausaha</option>
-                          </select>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-secondary btn-fw" data-dismiss="modal">Tutup</button>
-                    <button type="button" class="btn btn-primary">Simpan Data</button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-                
-
-          <div class="row">
-            <div class="col-lg-12 grid-margin stretch-card">
-            <div class="card">
-            <div class="card-body">
-            <div class="table-responsive ">
-              <table id="tablepeminatan" class="table table-hover"> 
-                  <thead>
-                    <tr>
-                      <th>Aksi</th>
-                      <th>Nama</th>
-                      <th>Jenis Kelamin</th>
-                      <th>Kelas</th>
-                      <th>Domisili</th>
-                      <th>Alamat</th>
-                      <th>No. Telp</th>
-                      <th>Rencana setelah lulus</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><label class="badge badge-info"><i class="mdi mdi-information-variant"></i></label>
-                           <label class="badge badge-success"><i class="mdi mdi-lead-pencil"></i></label>
-                           <label class="badge badge-danger"><i class="mdi mdi-delete"></i></label></td>
-                      <td>Chika</td>
-                      <td>Perempuan</td>
-                      <td>X RPL C</td>
-                      <td>malangggg</td>
-                      <td>jalan jalan</td>
-                      <td>089736054</td>
-                      <td>Kuliah</td>
-                    </tr>
-                </tbody>    
-                </table>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>  
+              </div>
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
@@ -357,14 +292,15 @@
   <script src="../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
   <script src="../js/dataTables.select.min.js"></script>
 
+
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
   <script>
     $(document).ready(function () {
-        $('#tablepeminatan').DataTable();
-    } ) ;
-    </script>
+    $('#example').DataTable();
+  } ) ;
+  </script>
 
   <!-- End plugin js for this page -->
   <!-- inject:js -->
@@ -378,7 +314,12 @@
   <script src="../js/dashboard.js"></script>
   <script src="../js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
+
+  <script src="../js/file-upload.js"></script>
+  <script src="../js/typeahead.js"></script>
+  <script src="../js/select2.js"></script>
 </body>
 
 </html>
+
 

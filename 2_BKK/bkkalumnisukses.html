@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -14,6 +15,9 @@
   <link rel="stylesheet" href="../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
   <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css">
   <link rel="stylesheet" type="text/css" href="../js/select.dataTables.min.css">
+
+  <link rel="stylesheet" href="../vendors/mdi/css/materialdesignicons.min.css">
+
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="../css/vertical-layout-light/style.css">
@@ -211,71 +215,138 @@
       </nav>
       <!-- partial -->
       <div class="main-panel">
-        <div class="content-wrapper">
+        <div class="content-wrapper"> 
           <div class="row">
             <div class="col-md-12 grid-margin">
               <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                  <h3 class="font-weight-bold">Alumni Sukses</h3>
-                  <h6 class="font-weight-normal mb-0">Laman Alumni Sukses  | <span class="text-primary">SIMAS</span></h6>
+                  <h3 class="font-weight-bold">DATA ALUMNI SUKSES</h3>
+                  <h6 class="font-weight-normal mb-0">Laman Data Alumni Sukses | <span class="text-primary">SIMAS</span></h6>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-md-4 stretch-card grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <div class="card data-icon-card-primary">
-                    <div class="card-body">                      
-                      <div class="row">
-                        <div class="col-12 text-white">
-                          <h3>Form Alumni</h3> 
-                        </div> 
-                      </div>
-                    </div>
+            <div class="col-md-12 grid-margin">
+            <div class="template-demo">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Tambah Data</button>
+            </div>
+            </div>
+
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Tambah Data</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
                   </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <a href="bkkalumnisuksesform.html"><button type="button" class="btn btn-inverse-primary btn-fw btn-block">Masuk ke laman ini</button></a>
-                    </div>
+                  <div class="modal-body">
+                    <form class="forms-sample">
+                      <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap">
+                      </div>
+                      <div class="form-group">
+                        <label for="jeniskelamin">Jenis Kelamin</label>
+                          <select class="form-control" id="jeniskelamin">
+                            <option>Laki - Laki</option>
+                            <option>Perempuan</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="domisili">Jurusan</label>
+                        <input type="text" class="form-control" id="jurusan" placeholder="Jurusan">
+                      </div>
+                      <div class="form-group">
+                        <label for="notelp">No. Telp.</label>
+                        <input type="number" class="form-control" id="notelp" placeholder="No. Telp.">
+                      </div>
+                      <div class="form-group">
+                        <label for="namaperusahaan">Nama Perusahaan</label>
+                        <input type="text" class="form-control" id="namaperusahaan" placeholder="Nama Perusahaan">
+                      </div>
+                      <div class="form-group">
+                        <label for="jabatan">Jabatan saat ini</label>
+                        <input type="text" class="form-control" id="jabatan" placeholder="Jabatan saat ini">
+                      </div>
+                      <div class="form-group">
+                        <label>Foto terbaru</label>
+                        <input type="file" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                          <input type="text" class="form-control file-upload-info" disabled placeholder="Unggah Foto terbaru">
+                          <span class="input-group-append">
+                            <button class="file-upload-browse btn btn-primary" type="button">Unggah</button>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>CV terbaru</label>
+                        <input type="file" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                          <input type="text" class="form-control file-upload-info" disabled placeholder="Unggah CV terbaru">
+                          <span class="input-group-append">
+                            <button class="file-upload-browse btn btn-primary" type="button">Unggah</button>
+                          </span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-fw" data-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Simpan Data</button>
                   </div>
                 </div>
               </div>
-             </div>
-
-             <div class="col-md-4 stretch-card grid-margin">
-                <div class="card">
+            </div>
+          </div>
+                
+          <div class="row">
+                  <div class="col-lg-12 grid-margin stretch-card">
+                  <div class="card">
                   <div class="card-body">
-                    <div class="card data-icon-card-primary">
-                      <div class="card-body">                      
-                        <div class="row">
-                          <div class="col-12 text-white">
-                            <h3>Data Alumni Sukses</h3> 
-                          </div> 
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <div class="row">
-                        <a href="bkkalumnisukseslaporan.html"><button type="button" class="btn btn-inverse-primary btn-fw btn-block">Masuk ke laman ini</button></a>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="table-responsive">
+                    <table id="tablelaporanalumni" class="table table-hover table-main"> 
+                        <thead>
+                          <tr>
+                            <th>Aksi</th>
+                            <th>Nama Lengkap</th>
+                            <th>Jurusan</th>
+                            <th>Jenis Kelamin</th>
+                            <th>No. Telp.</th>
+                            <th>Nama Perusahaan</th>
+                            <th>Jabatan saat ini</th>
+                            <th>Foto Terbaru</th>
+                            <th>CV Terbaru</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><label class="badge badge-info"><i class="mdi mdi-information-variant"></i></label>
+                              <label class="badge badge-success"><i class="mdi mdi-lead-pencil"></i></label>
+                              <label class="badge badge-danger"><i class="mdi mdi-delete"></i></label></td>
+                            <td>Raib</td>
+                            <td>RPL</td>
+                            <td>Perempuan</td>
+                            <td>11224455667788</td>
+                            <td>Paralel Corp</td>
+                            <td>CEO Paralel Corp</td>
+                            <td><button type="button" class="btn btn-primary btn-icon-text"><i class="ti-file btn-icon-prepend"></i> Lihat </button></td>
+                            <td><button type="button" class="btn btn-primary btn-icon-text"><i class="ti-file btn-icon-prepend"></i> Lihat </button></td>
+                          </tr>
+                      </tbody>    
+                      </table>
                 </div>
-               </div>
-  
-           
-               
-          
-              
+                </div>
+                </div>
+                </div>
           </div>
-              
-          </div>
-
-           
-        
+                
+        </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
         <footer class="footer">
@@ -300,6 +371,15 @@
   <script src="../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
   <script src="../js/dataTables.select.min.js"></script>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+  <script>
+    $(document).ready(function () {
+        $('#tablelaporanalumni').DataTable();
+    } ) ;
+    </script>
+
   <!-- End plugin js for this page -->
   <!-- inject:js -->
   <script src="../js/off-canvas.js"></script>
@@ -311,6 +391,10 @@
   <!-- Custom js for this page-->
   <script src="../js/dashboard.js"></script>
   <script src="../js/Chart.roundedBarCharts.js"></script>
+
+  <script src="../js/file-upload.js"></script>
+  <script src="../js/typeahead.js"></script>
+  <script src="../js/select2.js"></script>
   <!-- End custom js for this page-->
 </body>
 

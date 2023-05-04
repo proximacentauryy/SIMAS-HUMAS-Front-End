@@ -15,9 +15,6 @@
   <link rel="stylesheet" href="../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
   <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css">
   <link rel="stylesheet" type="text/css" href="../js/select.dataTables.min.css">
-
-  <link rel="stylesheet" href="../vendors/mdi/css/materialdesignicons.min.css">
-
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="../css/vertical-layout-light/style.css">
@@ -203,7 +200,7 @@
                     <a class="nav-link" href="../2_BKK/bkkworkshop.html">Workshop</a>
                     <a class="nav-link" href="../2_BKK/bkkkebekerjaan.html">Kebekerjaan</a>
                     <a class="nav-link" href="../2_BKK/bkkspw.html">SPW</a>
-                    <a class="nav-link" href="../2_BKK/bkklomba.html">Lomba</a>
+                    <a class="nav-link" href="#">Lomba</a>
                     <a class="nav-link" href="../2_BKK/bkkloker.html">Lowongan Kerja</a>
                   </div>
                 <li class="nav-item"><a class="nav-link" href="../3_ICT/ict.html">ICT</a></li>
@@ -220,108 +217,56 @@
             <div class="col-md-12 grid-margin">
               <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                  <h3 class="font-weight-bold">Lomba</h3>
-                  <h6 class="font-weight-normal mb-0">Laman Data Lomba | <span class="text-primary">SIMAS</span></h6>
+                  <h3 class="font-weight-bold">LOMBA</h3>
+                  <h6 class="font-weight-normal mb-0">Laman Lomba | <span class="text-primary">SIMAS</span></h6>
                 </div>
               </div>
             </div>
           </div>
-                
-          <div class="row">
-            <div class="col-md-12 grid-margin">
-            <div class="template-demo">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Tambah Data</button>
-            </div>
-            </div>
-
-            
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Tambah Data</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="forms-sample">
-                      <div class="form-group">
-                        <label for="penyelenggara">Penyelenggara</label>
-                        <input type="text" class="form-control" id="penyelenggara" placeholder="penyelenggara">
-                      </div>
-                      <div class="form-group">
-                        <label for="peserta">Peserta</label>
-                        <input type="text" class="form-control" id="peserta" placeholder="Peserta">
-                      </div>
-                      <div class="form-group">
-                        <label for="daftar">Tanggal Pendaftaran</label>
-                        <input type="date" class="form-control" id="daftar">
-                      </div>
-                      <div class="form-group">
-                        <label for="tgllomba">Tanggal Lomba</label>
-                        <input type="date" class="form-control" id="tgllomba">
-                      </div>
-                      <div class="form-group">
-                        <label for="tempat">Tempat</label>
-                        <input type="text" class="form-control" id="tempat" placeholder="Domisili">
-                      </div>
-                      <div class="form-group">
-                        <label>Unggah Pamflet Lomba</label>
-                        <input type="file" class="file-upload-default">
-                        <div class="input-group col-xs-12">
-                          <input type="text" class="form-control file-upload-info" disabled placeholder="Unggah Pamflet Lomba">
-                          <span class="input-group-append">
-                            <button class="file-upload-browse btn btn-primary" type="button">Unggah</button>
-                          </span>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-secondary btn-fw" data-dismiss="modal">Tutup</button>
-                    <button type="button" class="btn btn-primary">Simpan Data</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-12 grid-margin stretch-card">
+          
+        <div class="row">
+          <div class="col-md-4 stretch-card grid-margin">
             <div class="card">
-            <div class="card-body">
-            <div class="table-responsive ">
-              <table id="tablelomba" class="table table-hover table-main"> 
-                  <thead>
-                    <tr>
-                      <th>Aksi</th>
-                      <th>Penyelenggara</th>
-                      <th>Peserta</th>
-                      <th>Tanggal Pendaftaran</th>
-                      <th>Tanggal Lomba</th>
-                      <th>Tempat</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><label class="badge badge-info"><i class="mdi mdi-information-variant"></i></label>
-                        <label class="badge badge-success"><i class="mdi mdi-lead-pencil"></i></label>
-                        <label class="badge badge-danger"><i class="mdi mdi-delete"></i></label></td>
-                      <td>STIE Malangkucecwara</td>
-                      <td>SMA/SMK Jawa Timur</td>
-                      <td>12/03/2023</td>
-                      <td>19/03/2023</td>
-                      <td>Kampus STIE Malangkucecwara</td>
-                    </tr>
-                </tbody>    
-                </table>
+              <div class="card-body">
+                <div class="card data-icon-card-primary">
+                  <div class="card-body">                      
+                    <div class="row">
+                      <div class="col-12 text-white">
+                        <h3>Form Unggah Lomba</h3> 
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                  <a href="bkklombaform.html"><button type="button" class="btn btn-inverse-primary btn-fw btn-block">Isi form ini</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="col-md-4 stretch-card grid-margin">
+            <div class="card">
+              <div class="card-body">
+                <div class="card data-icon-card-primary">
+                  <div class="card-body">                      
+                    <div class="row">
+                      <div class="col-8 text-white">
+                        <h3>Data Lomba</h3>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <a href="bkklombalaporan.html"><button type="button" class="btn btn-inverse-primary btn-fw btn-block">Masuk ke laman ini</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          </div>
-          </div>
-          </div> 
+        </div>
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
@@ -347,15 +292,6 @@
   <script src="../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
   <script src="../js/dataTables.select.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
-  <script>
-    $(document).ready(function () {
-        $('#tablelomba').DataTable();
-    } ) ;
-    </script>
-
   <!-- End plugin js for this page -->
   <!-- inject:js -->
   <script src="../js/off-canvas.js"></script>
@@ -368,11 +304,8 @@
   <script src="../js/dashboard.js"></script>
   <script src="../js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
-
-  <script src="../js/file-upload.js"></script>
-  <script src="../js/typeahead.js"></script>
-  <script src="../js/select2.js"></script>
 </body>
 
 </html>
+
 
